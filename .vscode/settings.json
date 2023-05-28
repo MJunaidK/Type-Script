@@ -1,0 +1,13 @@
+{
+  "cSpell.words": ["Junaid"],
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "comment",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  }
+}
