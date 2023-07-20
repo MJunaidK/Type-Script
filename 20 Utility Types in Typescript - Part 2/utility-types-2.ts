@@ -15,7 +15,7 @@ function addFullName(name: Name): Name & {
 // Parameters and return type
 function permuteRows<T extends (...args: any[]) => any>(
   iteratorFunc: T,
-  data: Parameters<T>[0][]
+  data: Parameters<T>[0][] // 0 signifies first parameter, data: Name[]
 ): ReturnType<T>[] {
   return data.map(iteratorFunc);
 }

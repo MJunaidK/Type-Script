@@ -47,9 +47,10 @@ const mapById = (users: MyUser[]): Record<string, MyUser> => {
   return users.reduce((a, v) => {
     console.log('test ' + a, v);
     console.log('test ' + [v.id]);
+    console.log(typeof [v.id]);
     console.log({
       ...a,
-      [v.id]: v,
+      [v.id]: v, // destructuring MyUser object id on the left with square bracket
     });
     return {
       ...a,

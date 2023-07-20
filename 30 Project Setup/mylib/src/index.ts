@@ -7,3 +7,5 @@ export const borgName = (): string => {
 
   return `Your borg name is ${member} of ${members}`;
 };
+
+export const junaid = () => '';

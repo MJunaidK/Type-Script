@@ -19,7 +19,8 @@ class DataClass extends Subscribable<number> {
     this.publish(v);
   }
 }
-
+// user subscribe by passing a function to execute.
+// When a message is published, publisher will execute each subscriber's function
 const dc = new DataClass(0);
 const dcUnsub = dc.subscribe((v: number) => console.log(`DC ${v}`));
 const dcUnsub2 = dc.subscribe((v: number) => console.log(`DC2 ${v}`));

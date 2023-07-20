@@ -54,6 +54,9 @@ sbd1.set('a', 'hello');
 
 // mixin function
 
+// we need a type which we'll use to extend
+// other classes from. The main responsibility is to declare
+// that the type being passed in is a class.
 type Constructor<T> = new (...args: any[]) => T;
 
 function Dumpable<T extends Constructor<{ getObject(): object }>>(Base: T) {
